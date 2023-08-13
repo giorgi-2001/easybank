@@ -82,12 +82,12 @@ svg {
     width: 100%;
     top: 0;
     z-index: 5;
+    overflow: hidden;
 }
 
 .header__child {
     display: flex;
     justify-content: space-between;
-    overflow-x: hidden;
 }
 
 .header__nav {
@@ -341,7 +341,7 @@ svg {
         background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
         position: absolute;
         border-radius: 5px;
-        top: 57px;
+        top: 47px;
         display: none;
     }
 
@@ -387,6 +387,11 @@ svg {
 
 @media (min-width: 1200px) {
 
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
         align-items: start;
@@ -396,6 +401,7 @@ svg {
         background-image: url(images/bg-intro-desktop.svg);
         background-position: right -600px top -270px;
         position: relative;
+        overflow-anchor: left;
     }
 
     .banner__image {
@@ -404,7 +410,6 @@ svg {
         max-width: 680px;
         top: -120px;
         right: -120px;
-        overflow: hidden;
     }
 
     .banner__article {
