@@ -28,7 +28,7 @@
 
 /* global styles */
 
-body {
+html, body {
     font-size: 18px;
     width: 100%;
     overflow-x: hidden;
