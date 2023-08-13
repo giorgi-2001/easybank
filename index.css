@@ -28,10 +28,8 @@
 
 /* global styles */
 
-html, body {
+body {
     font-size: 18px;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 .global-margin { 
@@ -81,6 +79,7 @@ svg {
     background-color: white;
     padding: 20px 0;
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 5;
 }
@@ -88,6 +87,7 @@ svg {
 .header__child {
     display: flex;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 .header__nav {
@@ -386,7 +386,7 @@ svg {
 
 
 @media (min-width: 1200px) {
-    
+
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
         align-items: start;
