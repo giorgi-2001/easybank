@@ -153,7 +153,7 @@ svg {
     height: 0;
     width: 100%;
     background: linear-gradient(to bottom, var(--Dark-Blue), transparent);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 4;
